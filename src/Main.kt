@@ -57,7 +57,9 @@ fun main(){
             tiradesGuardades[partida][tiradesPerPartida] += tiradaActual
 
             /** Tirades CPU **/
-            acumuladorCPU += Random.nextInt(1, 6 + 1)
+            var tiradesCPU: Int = Random.nextInt(1, 6+1)
+            acumuladorCPU += tiradesCPU
+            println("La CPU ha tirat un ${CARES_DAU[tiradesCPU-1]} !")
         }
 
         println("Partida acabada!")
