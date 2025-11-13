@@ -2,7 +2,7 @@ import kotlin.random.Random
 
 fun main(){
     val DAUS: String = "⚀ ⚁ ⚂ ⚃ ⚄ ⚅"
-    val CARES_DAU: Array<String> = arrayOf("⚀", "⚁", "⚂", "⚃", "⚄", "⚅")
+    val CARES_DAU: Array<String> = arrayOf("⚀(1)", "⚁(2)", "⚂(3)", "⚃(4)", "⚄(5)", "⚅(6)")
 
     var partides: Int?
     var tiradesPerPartida: Int?
@@ -63,6 +63,7 @@ fun main(){
         println("Partida acabada!")
         println("Tu has aconseguit ${tiradesGuardades[partida][tiradesPerPartida]} punts")
         println("La CPU ha aconseguit $acumuladorCPU punts")
+
 
         if (tiradesGuardades[partida][tiradesPerPartida] > acumuladorCPU){
             println("Has guanyat!")
